@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+h1,
+p,
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+table,
+h1 {
+    margin: 20px;
+}
+
+h3 {
+    margin: 5px;
+}
+
+i {
+    margin: 0 10px;
+}
+
+span {
+    display: inline-block;
+    font-size: 0.6em;
+    width: 175px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.25em;
+    border: 2px solid #ccc;
+    transition: 1s;
+    visibility: hidden;
+}
+
+button {
+    margin: 2px;
+    padding: 5px;
+    width: 40px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+    visibility: hidden;
+    font-size: 1em;
+}
+
+button:hover {
+    border: 2px solid #f00;
+}
+
+#letraEnviar,
+#letraBorrar {
+    width: 65px;
+}
+
+#bajarNivel {
+    visibility: hidden;
+}
+
+.posicion-correcta {
+    background-color: #6aaa64;
+    color: #fff;
+}
+
+.posicion-incorrecta {
+    background-color: #c9b458;
+    color: #fff;
+}
+
+.no-existe {
+    background-color: #787c7e;
+    color: #fff;
+}
+
+p>i:hover {
+    color: #d00;
+    cursor: pointer;
+}
+
+.animacion-vibrar {
+    animation: vibrar 0.5s 1;
+    /* animation-iteration-count: 1s; */
+}
+
+@keyframes vibrar {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media (max-width: 500px) {
+    button {
+        width: 30px;
+        height: 40px;
+        margin: 1px;
+        padding: 2.5px;
+    }
+
+    #letraEnviar,
+    #letraBorrar {
+        width: 48.5px;
+    }
+}
+
+@media (max-width: 375px) {
+    button {
+        width: 25px;
+        height: 35px;
+        margin: 1px;
+        padding: 2.5px;
+    }
+
+    #letraEnviar,
+    #letraBorrar {
+        width: 41px;
+    }
+}
+
+@media (max-width: 315px) {
+    button {
+        width: 21px;
+        height: 31px;
+        margin: 1px;
+        padding: 2.5px;
+    }
+
+    #letraEnviar,
+    #letraBorrar {
+        width: 35px;
+    }
+}

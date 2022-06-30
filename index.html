@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="public/css/font-awesome.all.css">
+    <link rel="stylesheet" href="public/css/style.css">
+    <script src="public/src/myFunction.js" async></script>
+    <script src="public/src/class/confetti.js" async></script>
+</head>
+
+<body>
+    <h1>Wordle</h1>
+    <h3>Pulsa para empezar partida</h3>
+    <p>
+        <i id="bajarNivel" class="fa-solid fa-minus"></i>
+        <span>Dificultad: baja</span>
+        <i id="subirNivel" class="fa-solid fa-plus"></i><br>
+        <i id="jugar" class="fa-solid fa-play"></i>
+    </p>
+    <div class="contenedor">
+        <table id="tablaPartida">
+            <tr id="tablaFila0">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="tablaFila1">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="tablaFila2">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="tablaFila3">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="tablaFila4">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="tablaFila5">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+
+        <div id="teclado">
+            <div id="tecladoFila0">
+                <button id="letraQ" value="Q">Q</button>
+                <button id="letraW" value="W">W</button>
+                <button id="letraE" value="E">E</button>
+                <button id="letraR" value="R">R</button>
+                <button id="letraT" value="T">T</button>
+                <button id="letraY" value="Y">Y</button>
+                <button id="letraU" value="U">U</button>
+                <button id="letraI" value="I">I</button>
+                <button id="letraO" value="O">O</button>
+                <button id="letraP" value="P">P</button>
+            </div>
+
+            <div id="tecladoFila1">
+                <button id="letraA" value="A">A</button>
+                <button id="letraS" value="S">S</button>
+                <button id="letraD" value="D">D</button>
+                <button id="letraF" value="F">F</button>
+                <button id="letraG" value="G">G</button>
+                <button id="letraH" value="H">H</button>
+                <button id="letraJ" value="J">J</button>
+                <button id="letraK" value="K">K</button>
+                <button id="letraL" value="L">L</button>
+                <button id="letraÑ" value="Ñ">Ñ</button>
+            </div>
+
+            <div id="tecladoFila2">
+                <button id="letraEnviar" value="ENVIAR"><i class="fa-solid fa-spell-check"></i></button>
+                <button id="letraZ" value="Z">Z</button>
+                <button id="letraX" value="X">X</button>
+                <button id="letraC" value="C">C</button>
+                <button id="letraV" value="V">V</button>
+                <button id="letraB" value="B">B</button>
+                <button id="letraN" value="N">N</button>
+                <button id="letraM" value="M">M</button>
+                <button id="letraBorrar" value="BORRAR"><i class="fa-solid fa-delete-left"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
